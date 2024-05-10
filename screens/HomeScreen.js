@@ -10,9 +10,10 @@ import {
 
 export default function HomeScreen({ navigation }) {
   return (
+
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
       <Image style={styles.image} source={require('../assets/home-image.jpg')} />
-      <Text style={styles.title}>Welcome to Locapic</Text>
+      <Text style={styles.title}>Welcome to the Locapic</Text>
 
       <TextInput style={styles.input} placeholder="Nickname" />
       <TouchableOpacity onPress={() => navigation.navigate('TabNavigator')} style={styles.button} activeOpacity={0.8}>
